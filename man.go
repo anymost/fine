@@ -1,19 +1,14 @@
 package fine
 
+import "strconv"
+
 type Man struct {
 	Name    string
 	Age     int
 	Address string
+	Prev, Next *Man
 }
 
-func (man *Man) SayName() string {
-	return man.Name
-}
-
-func (man *Man) SayAge() int {
-	return man.Age
-}
-
-func (man *Man) SayAddress() string {
-	return man.Address
+func (man *Man) String() string {
+	return man.Name + " " + strconv.Itoa(man.Age) + " " + man.Address
 }
