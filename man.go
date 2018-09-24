@@ -6,14 +6,14 @@ type Man struct {
 	Address string
 }
 
-func (man *Man) sayName() string {
+func (man *Man) SayName() string {
 	return man.Name
 }
 
-func (man *Man) sayAge() int {
+func (man *Man) SayAge() int {
 	return man.Age
 }
 
-func (man *Man) sayAddress() string {
+func (man *Man) SayAddress() string {
 	return man.Address
 }
